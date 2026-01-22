@@ -1,0 +1,33 @@
+.logo {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo_eppe {
+        font-family: 'Coolvetica', sans-serif;
+    font-size: 120px;
+    color: #82231E;
+    line-height: 0.8;
+    margin: 0;
+    width: 200px;
+}
+.logo_studio {
+    font-family: 'Coolvetica', sans-serif;
+    font-size: 120px;
+    color: #82231E;
+    line-height: 0.8;
+    margin: 0;
+    width: 200px;
+}
+.logo_comment {
+    font-family: 'Coolvetica Rg', sans-serif;
+    color: #82231E;
+    font-size: 40px;
+    line-height: 0.8;
+    margin: 0;
+    width: 200px;
+}
+
+.logo_studio {
+    margin-left: 20px;
+}

@@ -1,0 +1,39 @@
+.footer {
+    bottom: 0px;
+    width:100%;
+    margin:auto;
+    display: flex;
+    color: #322f2f;
+    padding-top: 2%;
+        padding-bottom: 1%;
+}
+
+.footer__content_copyright {
+    padding-right: 1%;
+        font-family: 'Coolvetica Rg', sans-serif;
+}
+
+.footer__talk {
+        font-size: 24px;
+    padding-left: 1%;
+    font-family: 'Coolvetica Rg', sans-serif;
+}
+
+.footer__content_contact2 {
+    margin-left: 5%;
+    font-size: 20px;
+    padding-left: 1%;
+    font-family: 'Coolvetica Rg', sans-serif;
+    margin-right: auto;
+}
+
+.footer__content_contact {
+    margin-left: 5%;
+    font-size: 20px;
+    padding-left: 1%;
+    font-family: 'Coolvetica Rg', sans-serif;
+}
+
+.footer__img_instance{
+    height: 160px;
+}
