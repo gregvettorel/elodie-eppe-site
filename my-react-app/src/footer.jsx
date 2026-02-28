@@ -17,7 +17,6 @@ function Footer() {
         <div>TVA: BE077.442.7214</div>
         <div>matricule : 3004683</div> 
         </div>
-          <img src="/LOGO_EE_blanc.svg" alt="EPPE Studio Logo"  className='footer__img_instance'/>
       <div className="footer__content_copyright">
         <p>© 2026 Elodie Eppe</p>
       </div>
