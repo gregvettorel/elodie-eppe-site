@@ -1,11 +1,11 @@
 .footer {
     bottom: 0px;
-    width:100%;
-    margin:auto;
+    width: 80%;
+margin: auto;
     display: flex;
     color: #322f2f;
     padding-top: 2%;
-        padding-bottom: 1%;
+    padding-bottom: 5%;
 }
 
 .footer__content_copyright {

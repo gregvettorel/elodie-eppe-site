@@ -1,10 +1,10 @@
 import React from 'react'
+import './contact.css'
 
 function Contact() {
   return (
-    <section className="section contact-section">
+    <section id="contact" className="contact-section">
       <h1>Contact</h1>
-      <p>Get in touch with us</p>
     </section>
   )
 }
