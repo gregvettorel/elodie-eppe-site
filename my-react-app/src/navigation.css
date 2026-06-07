@@ -41,16 +41,21 @@
 
 @media (max-width: 640px) {
   .navigation {
-    padding: 16px 18px;
+    padding: 14px 14px;
     align-items: center;
   }
 
   .logo {
-    width: 140px;
+    width: 100px;
   }
 
   .nav_links {
     margin-top: 0;
-    gap: 22px;
+    gap: 14px;
+  }
+
+  .nav_links a {
+    font-size: 0.65rem;
+    letter-spacing: 0.08em;
   }
 }

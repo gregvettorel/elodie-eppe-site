@@ -1,4 +1,6 @@
 .projects-section {
+  position: relative;
+  z-index: 1;
   width: 100%;
   padding: 60px 0 48px;
 }
@@ -27,87 +29,107 @@
   opacity: 0.15;
 }
 
-/* Masonry columns — images show at natural aspect ratio, no cropping */
+/* Three flex columns — images pack tightly with no row-height gaps */
 .projects-grid {
-  columns: 3;
-  column-gap: 10px;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
   padding: 0 10px;
 }
 
+.projects-col {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Each item is a plain block — position: absolute works reliably here */
 .project-item {
-  break-inside: avoid;
-  margin-bottom: 10px;
-  cursor: pointer;
   position: relative;
   overflow: hidden;
+  cursor: pointer;
 }
 
 .project-item img {
   width: 100%;
   height: auto;
   display: block;
-  transition: transform 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition: filter 0.4s ease;
 }
 
-.project-item:hover img {
-  transform: scale(1.02);
+.project-item.is-open img {
+  filter: brightness(0.35);
 }
 
-/* Hover title overlay */
-.project-item-hover {
+/* Overlay — absolutely positioned, centered text */
+.project-overlay {
   position: absolute;
   inset: 0;
   display: flex;
-  align-items: flex-end;
-  padding: 16px;
-  background: linear-gradient(transparent 50%, rgba(20, 18, 18, 0.45));
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 24px 20px;
+  background: rgba(0, 0, 0, 0.50);
   opacity: 0;
-  transition: opacity 0.35s ease;
+  pointer-events: none;
+  transition: opacity 0.4s ease;
 }
 
-.project-item:hover .project-item-hover {
+.project-item.is-open .project-overlay {
   opacity: 1;
+  pointer-events: auto;
 }
 
-.project-item-hover-title {
+.project-overlay-meta {
+  font-family: 'Coolvetica Rg', sans-serif;
+  font-size: 0.65rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 8px;
+  text-shadow: 0 1px 6px rgba(0, 0, 0, 0.7);
+}
+
+.project-overlay-title {
   font-family: 'Helvetica Light', sans-serif;
-  font-size: 0.78rem;
-  letter-spacing: 0.06em;
+  font-size: 1.1rem;
+  font-weight: normal;
   color: #fff;
+  margin: 0 0 14px;
+  line-height: 1.3;
+  text-shadow: 0 1px 10px rgba(0, 0, 0, 0.8), 0 0 3px rgba(0, 0, 0, 0.5);
+}
+
+.project-overlay-desc {
+  font-family: 'Helvetica Light', sans-serif;
+  font-size: 0.82rem;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.9);
+  margin: 0;
+  width: 90%;
+  text-shadow: 0 1px 8px rgba(0, 0, 0, 0.75);
 }
 
 /* Tablet */
-@media (max-width: 1024px) {
-  .projects-grid {
-    columns: 2;
-    column-gap: 8px;
-  }
-
-  .project-item {
-    margin-bottom: 8px;
-  }
+@media (max-width: 900px) {
+  .projects-grid { gap: 7px; }
+  .projects-col  { gap: 7px; }
 }
 
-/* Mobile */
+/* Mobile — 2 cols (set in JS), tighten gap */
 @media (max-width: 640px) {
-  .projects-section {
-    padding: 40px 0 32px;
-  }
-
+  .projects-section { padding: 40px 0 32px; }
   .projects-grid {
-    columns: 2;
-    column-gap: 6px;
+    gap: 6px;
     padding: 0 6px;
   }
+  .projects-col { gap: 6px; }
 
-  .project-item {
-    margin-bottom: 6px;
-  }
-}
-
-/* Small mobile */
-@media (max-width: 400px) {
-  .projects-grid {
-    columns: 1;
-  }
+  .project-overlay { padding: 10px 8px; }
+  .project-overlay-meta  { font-size: 0.58rem; margin-bottom: 5px; }
+  .project-overlay-title { font-size: 0.78rem; margin-bottom: 0; }
+  .project-overlay-desc  { display: none; }
 }

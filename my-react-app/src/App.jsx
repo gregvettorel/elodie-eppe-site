@@ -1,25 +1,35 @@
+import { Routes, Route, useLocation } from 'react-router-dom'
+import { useEffect } from 'react'
 import Navigation from './navigation.jsx'
-import Home from './sections/Home'
 import Projects from './sections/Projects'
 import Contact from './sections/Contact'
+import APropos from './pages/APropos'
 import Footer from './footer.jsx'
 
-function App() {
+function ScrollToTop() {
+  const { pathname } = useLocation()
+  useEffect(() => { window.scrollTo(0, 0) }, [pathname])
+  return null
+}
 
+function App() {
   return (
     <>
-      <Navigation/>
-      <main className="sections-container">
-        <div className='intro-section'>
-        <p>L’atelier d’architecture défend une lecture simple et sensible des espaces, attentive aux usages et à l’intégration de nœuds d’interaction.
-          </p>
-          <p> 
-Nourri par des savoirs variés (architecture, céramique, expérience vécue) l’atelier cherche à révèler les qualités propres aux lieux et les manières d’habiter.
-Les réflexions autour du réemploi des matériaux, de la gestion des eaux et des conforts techniques font partie intégrante de ses valeurs.</p>
-        </div>
-        <Projects />
-        <Contact />
-      </main>
+      <ScrollToTop />
+      <Navigation />
+      <Routes>
+        <Route path="/" element={
+          <main className="sections-container">
+            <div className='intro-section'>
+              <p>L'atelier d'architecture défend une lecture simple et sensible des espaces, attentive aux usages et aux relations qui s'y développent.</p>
+              <p>Nourri par des savoirs variés ( architecture, céramique et expérience du quotidien ) l'atelier cherche à révéler les qualités propres aux lieux et les différentes manières de les habiter. Les questions de réemploi des matériaux, de gestion de l'eau et de confort font partie intégrante de cette démarche.</p>
+            </div>
+            <Projects />
+            <Contact />
+          </main>
+        } />
+        <Route path="/a-propos" element={<APropos />} />
+      </Routes>
       <Footer />
     </>
   )
