@@ -33,9 +33,6 @@
     margin: 0;
 }
 
-/* unused legacy classes kept for safety */
-.footer__talk { display: none; }
-.footer__img_instance { height: 160px; }
 
 @media (max-width: 640px) {
   .footer {

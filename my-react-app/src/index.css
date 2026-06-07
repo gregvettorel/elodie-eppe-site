@@ -16,15 +16,6 @@ body::before {
 }
 
 @font-face {
-  font-family: 'Coolvetica';
-  src: url('./assets/fonts/Coolvetica Hv Comp.otf') format('opentype');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-
-@font-face {
   font-family: 'Coolvetica Rg';
   src: url('./assets/fonts/Coolvetica Rg.otf') format('opentype');
   font-weight: normal;
@@ -46,12 +37,6 @@ body::before {
   font-weight: normal;
   font-style: normal;
   font-display: swap;
-}
-
-h4 {
-    font-family: 'Helvetica', sans-serif;
-    font-size: 1.5rem;
-    margin: 20px 0 10px 0;
 }
 
 /* Intro — sticky within the tall main container.
