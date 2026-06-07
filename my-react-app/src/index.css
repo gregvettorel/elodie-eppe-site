@@ -47,11 +47,31 @@ h4 {
 }
 
 .intro-section {
-  margin: 100px auto 40px;
-  width: 70%;
-  font-family: 'Helvetica', sans-serif;
-  font-size: 1.4rem;
-  line-height: 1.6;
-  margin-top:10%;
+  margin: 9% auto 64px;
+  width: 62%;
+  font-family: 'Helvetica Light', sans-serif;
+  font-size: 1.25rem;
+  line-height: 1.75;
   text-align: left;
+  color: #322f2f;
+}
+
+.intro-section p {
+  margin: 0 0 1.1em;
+}
+
+@media (max-width: 900px) {
+  .intro-section {
+    width: 82%;
+    font-size: 1.1rem;
+    margin: 12% auto 48px;
+  }
+}
+
+@media (max-width: 600px) {
+  .intro-section {
+    width: 88%;
+    font-size: 1rem;
+    margin: 16% auto 40px;
+  }
 }
