@@ -24,8 +24,10 @@ function App() {
               <p>L'atelier d'architecture défend une lecture simple et sensible des espaces, attentive aux usages et aux relations qui s'y développent.</p>
               <p>Nourri par des savoirs variés ( architecture, céramique et expérience du quotidien ) l'atelier cherche à révéler les qualités propres aux lieux et les différentes manières de les habiter. Les questions de réemploi des matériaux, de gestion de l'eau et de confort font partie intégrante de cette démarche.</p>
             </div>
-            <Projects />
-            <Contact />
+            <div className="intro-cover">
+              <Projects />
+              <Contact />
+            </div>
           </main>
         } />
         <Route path="/a-propos" element={<APropos />} />

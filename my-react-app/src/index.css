@@ -40,29 +40,51 @@ body::before {
 }
 
 /* Intro — sticky within the tall main container.
-   The projects section (z-index 1, background) slides over it as you scroll. */
+   The .intro-cover block (projects + contact) slides over it as you scroll. */
 .intro-section {
   position: sticky;
   top: 80px;
   z-index: 0;
-  margin: 9% auto 48px;
+  margin: 6% auto 48px;
   width: 62%;
   font-family: 'Helvetica Light', sans-serif;
-  font-size: 1.25rem;
+  font-size: 15px;
   line-height: 1.75;
   text-align: left;
-  color: rgba(50, 47, 47, 0.45);
+  color: #322f2f;
 }
 
 .intro-section p {
+  max-width: 920px;
   margin: 0 0 1.1em;
+}
+
+/* Opaque cover for everything that slides over the sticky intro.
+   A viewport-fixed copy of the page background, clipped to this box,
+   hides the intro fully (image gaps and section padding included)
+   while staying pixel-aligned with body::before — unlike
+   background-attachment: fixed, this also works on iOS Safari. */
+.intro-cover {
+  position: relative;
+  z-index: 1;
+  clip-path: inset(0);
+}
+
+.intro-cover::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background-color: #fffef9;
+  background-image: url('./assets/background.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 @media (max-width: 900px) {
   .intro-section {
     width: 82%;
-    font-size: 1.1rem;
-    margin: 12% auto 48px;
+    margin: 6% auto 48px;
     top: 70px;
   }
 }
@@ -70,8 +92,7 @@ body::before {
 @media (max-width: 600px) {
   .intro-section {
     width: 88%;
-    font-size: 1rem;
-    margin: 16% auto 40px;
+    margin: 8% auto 40px;
     top: 60px;
   }
 }

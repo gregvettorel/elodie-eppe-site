@@ -17,7 +17,7 @@ function APropos() {
 
       <a className="cv-link" href="/cv.pdf" target="_blank" rel="noopener noreferrer">
         <span className="cv-link-rule" />
-        Ouvrez mon Resumé
+        Ouvrez mon CV
       </a>
 
       <div className="services-section">

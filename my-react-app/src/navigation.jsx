@@ -69,6 +69,12 @@ function Navigation() {
         >
           Projets
         </a>
+        <NavLink
+          to="/a-propos"
+          className={({ isActive }) => isActive ? 'active' : ''}
+        >
+          À propos
+        </NavLink>
         <a
           href="#contact"
           onClick={(e) => handleSectionClick(e, 'contact')}
@@ -76,12 +82,6 @@ function Navigation() {
         >
           Contact
         </a>
-        <NavLink
-          to="/a-propos"
-          className={({ isActive }) => isActive ? 'active' : ''}
-        >
-          À propos
-        </NavLink>
       </div>
     </nav>
   )

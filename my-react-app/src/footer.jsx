@@ -11,7 +11,7 @@ function Footer() {
         <div>Conseil</div>
         </div>
       <div className="footer__content_contact2">
-        <div>eppe.elodie@outlook.com</div>
+        <div>eppe.elodie@gmail.com</div>
         <div>0484 56 96 68</div>
         <br />
         <div>TVA: BE077.442.7214</div>

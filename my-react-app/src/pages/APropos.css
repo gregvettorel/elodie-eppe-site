@@ -29,10 +29,10 @@
 
 .apropos-content {
   font-family: 'Helvetica Light', sans-serif;
-  font-size: 1.1rem;
+  font-size: 15px;
   line-height: 1.75;
   color: #322f2f;
-  max-width: 620px;
+  max-width: 920px;
 }
 
 .cv-link {
