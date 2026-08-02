@@ -1,21 +1,21 @@
 import React, { useState, useEffect } from 'react'
 import './projects.css'
 
-import imgFacade    from '../assets/imgFacade.png'
-import imgFacade2   from '../assets/imgFacade2.png'
-import imgCuisine   from '../assets/imgCuisine.png'
-import imgDoor      from '../assets/imgDoor.JPG'
-import imgStair     from '../assets/imgStair.jpg'
-import imgCollage   from '../assets/imgCollage.png'
-import imgBolles    from '../assets/imgBolles.jpg'
-import imgCeramique from '../assets/imgCeramique.JPG'
-import imgEider     from '../assets/imgEiderVertical.png'
-import imgTable     from '../assets/imgTable.JPG'
-import imgTable2    from '../assets/imgTable2.JPG'
-import imgTable3    from '../assets/imgTable3.JPG'
-import imgEider2    from '../assets/imgEider2.png'
-import imgBoulle    from '../assets/imgCeramique2.jpg'
-import imgBoulle2   from '../assets/imgVaseClose.jpg'
+import imgFacade    from '../assets/imgFacade.webp'
+import imgFacade2   from '../assets/imgFacade2.webp'
+import imgCuisine   from '../assets/imgCuisine.webp'
+import imgDoor      from '../assets/imgDoor.webp'
+import imgStair     from '../assets/imgStair.webp'
+import imgCollage   from '../assets/imgCollage.webp'
+import imgBolles    from '../assets/imgBolles.webp'
+import imgCeramique from '../assets/imgCeramique.webp'
+import imgEider     from '../assets/imgEiderVertical.webp'
+import imgTable     from '../assets/imgTable.webp'
+import imgTable2    from '../assets/imgTable2.webp'
+import imgTable3    from '../assets/imgTable3.webp'
+import imgEider2    from '../assets/imgEider2.webp'
+import imgBoulle    from '../assets/imgCeramique2.webp'
+import imgBoulle2   from '../assets/imgVaseClose.webp'
 
 // ─── Project data ──────────────────────────────────────────────────────────
 // Update title, year, location and description to match each project.
@@ -187,9 +187,9 @@ function Projects() {
                   aria-expanded={isOpen}
                   onKeyDown={e => e.key === 'Enter' && handleItemClick(project)}
                 >
-                  <img src={project.image} alt={project.title} />
+                  <img src={project.image} alt={project.title} loading="lazy" decoding="async" />
                   {galleryImg && (
-                    <img className="project-gallery-img" src={galleryImg} alt={project.title} />
+                    <img className="project-gallery-img" src={galleryImg} alt={project.title} loading="lazy" decoding="async" />
                   )}
 
                   <div className="project-overlay" aria-hidden={step !== 1}>
