@@ -1,12 +1,4 @@
 {
-  "redirects": [
-    {
-      "source": "/:path*",
-      "has": [{ "type": "host", "value": "www.eeppe.be" }],
-      "destination": "https://eeppe.be/:path*",
-      "permanent": true
-    }
-  ],
   "rewrites": [
     { "source": "/((?!sitemap.xml|robots.txt|.*\\..*).*)", "destination": "/index.html" }
   ]
