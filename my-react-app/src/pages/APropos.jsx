@@ -10,7 +10,7 @@ function APropos() {
       </div>
 
       <div className="apropos-content">
-        <p>Architecte indépendante depuis plus de 5 ans, j'interviens sur des projets privés et publics en assurant leur développement de la conception à la réalisation.</p>
+        <p>Architecte indépendante, j'interviens sur des projets privés et publics en assurant leur développement de la conception à la réalisation.</p>
         <p>Diplômée avec distinction de la Faculté d'Architecture de l'UCLouvain, j'ai acquis une expérience diversifiée au sein de bureaux d'architecture en Belgique et en Suisse. Cette expérience m'a permis de développer une expertise en gestion de projets, coordination des différents intervenants, suivi des budgets et accompagnement des maîtres d'ouvrage.</p>
         <p>J'accorde une attention particulière à la qualité architecturale, à la faisabilité technique et à la recherche de solutions adaptées aux besoins.</p>
       </div>

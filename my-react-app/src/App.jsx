@@ -41,7 +41,7 @@ function App() {
           <>
           <Seo
             title="À propos — Eppe Elodie Architecture"
-            description="Elodie Eppe, architecte indépendante à Bruxelles depuis plus de 5 ans. Diplômée de l'UCLouvain, elle accompagne rénovations, extensions, régularisations et mobilier sur mesure, de la conception à la réalisation."
+            description="Elodie Eppe, architecte indépendante, diplômée de l'UCLouvain, elle accompagne rénovations, extensions, régularisations et mobilier sur mesure, de la conception à la réalisation."
             path="/a-propos"
           />
           <APropos />
