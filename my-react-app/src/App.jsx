@@ -27,8 +27,11 @@ function App() {
           />
           <main className="sections-container">
             <div className='intro-section'>
-              <p>L'atelier d'architecture défend une lecture simple et sensible des espaces, attentive aux usages et aux relations qui s'y développent.</p>
-              <p>Nourri par des savoirs variés ( architecture, céramique et expérience du quotidien ) l'atelier cherche à révéler les qualités propres aux lieux et les différentes manières de les habiter. Les questions de réemploi des matériaux, de gestion de l'eau et de confort font partie intégrante de cette démarche.</p>
+              <p>L’atelier développe une approche sensible et réfléchie de l’architecture, attentive aux usages, aux matières et aux relations qui se tissent entre les espaces et ceux qui les habitent.</p>
+              <p>Nourri par des expériences et des savoir-faire variés, de l’architecture à la céramique, en passant par l’observation du quotidien, le travail de l’atelier cherche à révéler le potentiel des lieux et à imaginer de nouvelles façons de les habiter.</p>
+              <p>Une attention particulière est portée aux matériaux, à leur histoire et à leur mise en œuvre, avec la volonté de privilégier le réemploi lorsque cela est possible. L’atelier accorde également une place importante à la valorisation de l’existant, à l’optimisation des espaces et à la création d’aménagements fonctionnels, adaptés aux besoins de chacun.</p>
+              <p>La gestion de l’eau, le confort thermique et acoustique, ainsi que les aspects techniques du projet sont intégrés dès la conception. Pour y répondre de manière cohérente, l’atelier collabore avec différents experts, notamment des ingénieurs en stabilité, des conseillers PEB et des acousticiens.</p>
+              <p>Chaque projet est ainsi envisagé dans sa globalité, avec le souci de trouver un équilibre entre sensibilité architecturale, fonctionnalité et durabilité.</p>
             </div>
             <div className="intro-cover">
               <Projects />
