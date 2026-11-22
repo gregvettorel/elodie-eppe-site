@@ -69,6 +69,55 @@
   margin-top: 80px;
 }
 
+.services-section .apropos-eyebrow {
+  margin-bottom: 40px;
+}
+
+.services-marquee {
+  overflow: hidden;
+  margin-bottom: 40px;
+  -webkit-mask-image: linear-gradient(to right, transparent, #000 8%, #000 92%, transparent);
+          mask-image: linear-gradient(to right, transparent, #000 8%, #000 92%, transparent);
+}
+
+.services-marquee-track {
+  display: flex;
+  width: max-content;
+  animation: services-marquee 40s linear infinite;
+}
+
+.services-marquee:hover .services-marquee-track {
+  animation-play-state: paused;
+}
+
+.services-marquee-group {
+  display: flex;
+  flex-shrink: 0;
+}
+
+.services-marquee-item {
+  font-family: 'Helvetica Light', sans-serif;
+  font-size: 15px;
+  color: #322f2f;
+  white-space: nowrap;
+}
+
+.services-marquee-item::after {
+  content: '—';
+  margin: 0 18px;
+  color: #82231E;
+  opacity: 0.6;
+}
+
+@keyframes services-marquee {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .services-marquee-track { animation: none; }
+}
+
 @media (max-width: 900px) {
   .apropos-page { width: 82%; padding: 60px 0; }
 }

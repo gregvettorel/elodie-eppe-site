@@ -31,7 +31,7 @@ const projects = [
     year: '2021/2022',
     location: 'Auderghem',
     description:
-      "Le projet propose un dédoublement de la façade arrière pour but d’y déplacer la circulation verticale, à présent ouverte sur les différents étages. Cette extension peu profonde, permet d’étendre les volumes, auparavant découpés autour de l’escalier existant. La façade en brique d’origine se devine derrière cette nouvelle façade vitrée. Celle-ci devient l’élément structurant, avec ces lignes prononcées et sa couleur vive. <br> Collaboration chez LOMO Studio _ Suivi de chantier et modifications de plans d’exécution.",
+      "Le projet propose un dédoublement de la façade arrière pour but d’y déplacer la circulation verticale, à présent ouverte sur les différents étages. Cette extension peu profonde, permet d’étendre les volumes, auparavant découpés autour de l’escalier existant. La façade en brique d’origine se devine derrière cette nouvelle façade vitrée. Celle-ci devient l’élément structurant, avec ces lignes prononcées et sa couleur vive. <br> Projet et visuel de LOMO/STUDIO architects - Collaboration 2021-2022 _ Suivis de chantier et modifications de plans d’exécution",
   },
   {
     id: 'door',
@@ -91,7 +91,7 @@ const projects = [
     year: '2021/2022',
     location: 'Auderghem',
     description:
-"Le projet propose un dédoublement de la façade arrière pour but d’y déplacer la circulation verticale, à présent ouverte sur les différents étages. Cette extension peu profonde, permet d’étendre les volumes, auparavant découpés autour de l’escalier existant. La façade en brique d’origine se devine derrière cette nouvelle façade vitrée. Celle-ci devient l’élément structurant, avec ces lignes prononcées et sa couleur vive. <br> Collaboration chez LOMO Studio _ Suivi de chantier et modifications de plans d’exécution."
+"Le projet propose un dédoublement de la façade arrière pour but d’y déplacer la circulation verticale, à présent ouverte sur les différents étages. Cette extension peu profonde, permet d’étendre les volumes, auparavant découpés autour de l’escalier existant. La façade en brique d’origine se devine derrière cette nouvelle façade vitrée. Celle-ci devient l’élément structurant, avec ces lignes prononcées et sa couleur vive. <br> Projet et visuel de LOMO/STUDIO architects - Collaboration 2021-2022 _ Suivis de chantier et modifications de plans d’exécution"
   },
       {
     id: 'boulle',

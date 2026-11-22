@@ -1,6 +1,16 @@
 import React from 'react'
 import './APropos.css'
 
+const SERVICES = [
+  'Rénovation',
+  'Extension',
+  'Transformation',
+  'Optimisation de l’espace',
+  'Régularisation de permis',
+  'Conseil à l’achat',
+  'Mobilier sur mesure',
+]
+
 function APropos() {
   return (
     <main className="apropos-page">
@@ -24,6 +34,18 @@ function APropos() {
         <div className="apropos-eyebrow">
           <span className="apropos-rule" />
           <span className="apropos-label">Services</span>
+        </div>
+
+        <div className="services-marquee" aria-label={SERVICES.join(', ')}>
+          <div className="services-marquee-track" aria-hidden="true">
+            {[0, 1].map(copy => (
+              <span className="services-marquee-group" key={copy}>
+                {SERVICES.map(s => (
+                  <span className="services-marquee-item" key={s}>{s}</span>
+                ))}
+              </span>
+            ))}
+          </div>
         </div>
 
         <div className="apropos-content">
